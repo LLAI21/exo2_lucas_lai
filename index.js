@@ -16,7 +16,7 @@ app.get('/tasks', (req, res) => {
 });
 
 // Route pour ajouter une tâche
-app.post('/tasks', (req, res) => {
+app.post('/add', (req, res) => {
   const { title } = req.body;
   if (!title) {
     return res.status(400).json({ error: 'Le titre de la tâche est requis.' });
@@ -28,7 +28,7 @@ app.post('/tasks', (req, res) => {
 });
 
 // Route pour supprimer une tâche par id
-app.delete('/tasks/:id', (req, res) => {
+app.delete('/delete/:id', (req, res) => {
   const { id } = req.params;
   const initialLength = tasks.length;
   tasks = tasks.filter(task => task.id != id);
