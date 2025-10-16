@@ -15,9 +15,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/LLAI21/exo2_lucas_lai/issues"
   },
-  "homepage": "https://github.com/LLAI21/exo2_lucas_lai#readme"
+  "homepage": "https://github.com/LLAI21/exo2_lucas_lai#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
 }
