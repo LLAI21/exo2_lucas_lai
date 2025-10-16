@@ -10,6 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//Vériier si le code est bien connecté au serveur
+app.get("/health", (_req, res) => res.json({ status: "ok" }));
 
 //Routes
 app.use("/api/todos", router) // /api/todos/{route}
