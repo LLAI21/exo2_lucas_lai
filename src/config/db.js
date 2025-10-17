@@ -1,7 +1,15 @@
 import mongoose from "mongoose";
+// import { Client } from 'pg'
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017';
-const connectDB = async () => {
+////Url localhost mongo
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017'; 
+// //Url de la base de donnée dans postgres
+// const client = new Client({
+//   connectionString: process.env.POSTGRES_URI || 'postgres://postgres:password@localhost:5432/postgres'
+// });
+
+const connectDB = async () => { //Connexion avec les db
+  //Partie mongo
   try {
     await mongoose.connect(MONGO_URI, {
       useNewUrlParser: true,
@@ -12,7 +20,20 @@ const connectDB = async () => {
     console.error('❌ Erreur de connexion à MongoDB :', error.message);
     process.exit(1);
   }
+
+
+  // //Partie postgres
+  // try {
+  //   await client.connect();
+  //   console.log('✅ Connexion PostgreSQL réussie');
+  // } catch (err) {
+  //   console.error('❌ Erreur PostgreSQL :', err.message);
+  // } finally {
+  //   await client.end();
+  //   console.log('🔌 Connexion PostgreSQL fermée');
+  // }
 };
+
 
 // ✅ Export par défaut
 export default connectDB;
