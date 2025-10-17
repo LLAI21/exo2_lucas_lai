@@ -54,7 +54,10 @@ npm install
 Create a .env file:
 
 Code
+
+Configure .env:
 DB_PASSWORD=yourMySQLPassword
+
 Configure mySQL.json:
 
 json
@@ -92,8 +95,6 @@ Content-Type: application/json
 Node.js
 
 Express
-
-MySQL
 
 dotenv
 
