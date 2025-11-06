@@ -96,9 +96,9 @@ npm run dev
 # 📡 API Endpoints
 | Méthode | Route        | Description              |
 |--------|--------------|--------------------------|
-| GET    | /tasks       | Récupère toutes les tâches |
-| POST   | /tasks       | Ajoute une nouvelle tâche |
-| DELETE | /tasks/:id   | Supprime une tâche par ID |
+| GET    | /tasks       | Fetch all tasks|
+| POST   | /tasks       | Create a new task ({ title })|
+| DELETE | /tasks/:id   | Remove a task by its unique ID |
 
 
 # 🧪 Example POST Request
