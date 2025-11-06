@@ -85,18 +85,24 @@ CREATE TABLE tasks (
   id INT PRIMARY KEY,
   title VARCHAR(255) NOT NULL
 );
-Start the server:
 ```
 
+Start the server:
 ```bash
-node app.js
+node server.js
+npm run dev
+```
+
 # 📡 API Endpoints
-Method	Route	Description
-GET	/tasks	Retrieve all tasks
-POST	/tasks	Add a new task ({ title })
-DELETE	/tasks/:id	Delete a task by ID
+| Méthode | Route        | Description              |
+|--------|--------------|--------------------------|
+| GET    | /tasks       | Récupère toutes les tâches |
+| POST   | /tasks       | Ajoute une nouvelle tâche |
+| DELETE | /tasks/:id   | Supprime une tâche par ID |
+
+
 # 🧪 Example POST Request
-http
+```http
 POST /tasks
 Content-Type: application/json
 
