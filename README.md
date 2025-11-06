@@ -13,7 +13,7 @@ A simple RESTful API for managing tasks (Todo list), built with Node.js, Express
 🔐 Secure database connection using .env file
 
 🧱 Project Structure
-Code
+```Code
 project/
 │
 ├── src/
@@ -40,43 +40,49 @@ project/
 ├── package-lock.json
 ├── README.md
 ├── server.js
+```
 
 # ⚙️ Installation
 Clone the project:
-
-bash
+```bash
 git clone https://github.com/your-username/task-manager-api.git
 cd task-manager-api
 Install dependencies:
+```
 
-bash
+```bash
 npm install
 Create a .env file:
+```
 
-Code
+```Code
 
 Configure .env:
 DB_PASSWORD=yourMySQLPassword
 
 Configure mySQL.json:
+```
 
-json
+```json
 {
   "host": "127.0.0.1",
   "port": 3306,
   "user": "root",
   "database": "task_manager"
 }
+
+```
 Create the MySQL table:
 
-sql
+```sql
 CREATE TABLE tasks (
   id INT PRIMARY KEY,
   title VARCHAR(255) NOT NULL
 );
 Start the server:
+```
 
-bash
+```bash
 node app.js
 # 📡 API Endpoints
 Method	Route	Description
@@ -91,6 +97,8 @@ Content-Type: application/json
 {
   "title": "Buy groceries"
 }
+```
+
 # 🛠 Technologies Used
 Node.js
 
