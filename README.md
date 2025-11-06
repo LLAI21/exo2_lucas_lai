@@ -54,6 +54,14 @@ Install dependencies:
 npm install
 Create a .env file:
 ```
+Configure package.json
+```json
+  "scripts": {
+    "test": "module",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+```
 
 ```Code
 Configure .env:
