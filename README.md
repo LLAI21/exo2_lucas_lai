@@ -56,13 +56,11 @@ Create a .env file:
 ```
 
 ```Code
-
 Configure .env:
 DB_PASSWORD=yourMySQLPassword
-
-Configure mySQL.json:
 ```
 
+Configure mySQL.json:
 ```json
 {
   "host": "127.0.0.1",
