@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 // import { Client } from 'pg'
 
 ////Url localhost mongo
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017'; 
+const MONGO_URI = process.env.MONGO_URI; 
 // //Url de la base de donnée dans postgres
 // const client = new Client({
 //   connectionString: process.env.POSTGRES_URI || 'postgres://postgres:password@localhost:5432/postgres'
@@ -20,6 +20,9 @@ const connectDB = async () => { //Connexion avec les db
     console.error('❌ Erreur de connexion à MongoDB :', error.message);
     process.exit(1);
   }
+
+
+  
 
 
   // //Partie postgres
